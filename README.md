@@ -1,3 +1,15 @@
+Note from Mason (Forker):
+
+This extractor is being used by me as an internal component for an MC project I have been working on. 
+I forked it because the original had a quirk that interfered with said project's toolchain (that quirk being the 
+files weren't allowed to be downloaded into an IntelliJ resources folder, because it blocks you from trying to 
+download things into pre-exisiting directories). 
+
+I do not intend on updating it beyond this fix. If you want to download it from here and using it, that's fine, 
+but I would prefer if you downloaded the source code from the original developer, rmheuer. You can click the "forked
+from" link to get to his original repository. 
+
+
 # McAssetExtractor
 
 #### About
