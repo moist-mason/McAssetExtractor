@@ -237,7 +237,7 @@ public final class McAssetExtractor {
         String version = args[0];
         String outPath = args[1];
         File outDir = new File(outPath);
-        if (outDir.exists())
+        if (outDir.exists() && !outPath.contains("resources")) // the fix
             exitError("Output directory already exists");
 
         new McAssetExtractor().run(version, outDir);
