@@ -157,7 +157,7 @@ public final class McAssetExtractor {
         int count = 0;
 
         JsonObject objects = assetIndex.getAsJsonObject("objects");
-        File assetsDir = new File(outputDir, "assets");
+        File assetsDir = new File(outputDir, "resources"); // the assets are now placed into a folder named "resources"
         for (String key : objects.keySet()) {
             System.out.println("Downloading " + key + " from launcher meta");
             File targetFile = new File(assetsDir, key);
@@ -237,7 +237,8 @@ public final class McAssetExtractor {
         String version = args[0];
         String outPath = args[1];
         File outDir = new File(outPath);
-        if (outDir.exists() && !outPath.contains("resources")) // the fix
+        if (outDir.exists() && !outPath.contains("jars")) // if a folder named "jars" exists, the program overwrites it
+            // instead of throwing an error.
             exitError("Output directory already exists");
 
         new McAssetExtractor().run(version, outDir);

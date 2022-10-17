@@ -1,13 +1,15 @@
 Note from Mason (Forker):
 
 This extractor is being used by me as an internal component for an MC project I have been working on. 
-I forked it because the original had a quirk that interfered with said project's toolchain (that quirk being the 
-files weren't allowed to be downloaded into an IntelliJ resources folder, because it blocks you from trying to 
-download things into pre-exisiting directories). 
+I forked it because the original had some quirks involving its download process that interfered with my 
+project's toolchain. (In short, the original downloads the asset files into a folder named "assets", while the 
+assets in my project need to be downloaded into a folder named "resources". There was also a problem with downloading
+the assets into an existing folder, which I've patched).
 
-I do not intend on updating it beyond this fix. If you want to download it from here and use it, that's fine, 
-but I would prefer if you downloaded the source code from the original developer, rmheuer. You can click the "forked
-from" link to get to their original repository. 
+I do not intend on updating it beyond the changes I need for the above. This fork is not really intended for end-users,
+as the changes I've made are tailored to the aforementioned project's structure. If you want to download it from here and use it, 
+that's fine, but I would prefer if you downloaded the source code from the original developer, rmheuer. 
+You can click the "forked from" link to get to their original repository. 
 
 
 # McAssetExtractor
