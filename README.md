@@ -29,13 +29,12 @@ potential copyright issues from distributing Minecraft's assets.
 
 #### Building
 
-Make sure you have Apache Maven installed, then run `mvn package`
-to build. The output JAR will be found in the `target/` directory.
+Download the code and import into your IDE, Gradle should handle the rest from there.
 
 #### Running
 
 McAssetExtractor requires Java 1.8 or higher. Use
-`java -jar McAssetExtractor-1.0-jar-with-dependencies.jar <version> <destination>` to extract
+`java -jar McAssetExtractor-1.0_02-jar-with-dependencies.jar <version> <destination>` to extract
 assets, replacing `<version>` with your desired version, and
 `<destination>` with a path to the destination directory.
 You can use the latest release or snapshot by setting the version to
